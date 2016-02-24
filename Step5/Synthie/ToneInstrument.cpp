@@ -6,6 +6,7 @@
 
 #include "stdafx.h"
 #include "ToneInstrument.h"
+#include "AR.h"
 
 #include "Notes.h"
 
@@ -30,6 +31,12 @@ void CToneInstrument::Start()
 	m_sinewave.SetSampleRate(GetSampleRate());
 	m_sinewave.Start();
 	m_time = 0;
+
+	// Tell the AR object it gets its samples from 
+	// the sine wave object.
+	m_ar.SetSource(&m_sinewave);
+	m_ar.SetSampleRate(GetSampleRate());
+	m_ar.Start();
 }
 
 
@@ -50,7 +57,12 @@ bool CToneInstrument::Generate()
 	m_time += GetSamplePeriod();
 
 	// We return true until the time reaches the duration.
-	return m_time < m_duration;
+	//seconds per beat * number of beats
+
+	double timeHeld = 1 / (m_bpm / 60)*m_duration;
+
+	//return m_time < beatsHeld;
+	return m_time < timeHeld;
 }
 
 /**

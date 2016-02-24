@@ -107,6 +107,9 @@ bool CSynthesizer::Generate(double * frame)
 
 			instrument->Start();
 
+			//set the pointer to the synthesizer
+			instrument->SetSynthesizer(this);
+
 			m_instruments.push_back(instrument);
 		}
 

@@ -42,5 +42,7 @@ protected:
 	double m_sampleRate;
 	double m_samplePeriod;
 	double m_frame[2];
+
+	double  m_bpm; //!< Beats per minute
 };
 

@@ -45,6 +45,9 @@ public:
 	//! Get the time since we started generating audio
 	double GetTime() { return m_time; }
 
+	//! Get the beats per minute
+	double GetBpm() { return m_bpm; }
+
 	void Start(void);
 
 	bool Generate(double *);

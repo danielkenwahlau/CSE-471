@@ -1,10 +1,21 @@
-﻿Build started 2/24/2016 2:20:28 AM.
-     1>Project "C:\Users\Daniel_Lau\Documents\Visual Studio 2013\Projects\CSE 471\Synthie - Copy\Synthie\Synthie.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2/24/2016 6:53:00 PM.
+     1>Project "C:\Users\Daniel_Lau\Documents\Visual Studio 2013\Projects\CSE 471\Step5\Synthie\Synthie.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Synthie.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ToneInstrument.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Synthie.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AR.cpp Instrument.cpp MainFrm.cpp Synthesizer.cpp Synthie.cpp SynthieView.cpp ToneInstrument.cpp
          ToneInstrument.cpp
+         Generating Code...
+         Compiling...
+         SynthieView.cpp
+         Synthie.cpp
+         Synthesizer.cpp
+         MainFrm.cpp
+         Instrument.cpp
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         AR.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Daniel_Lau\Documents\Visual Studio 2013\Projects\CSE 471\Synthie - Copy\Debug\Synthie.exe" /INCREMENTAL /NOLOGO amstrmid.lib quartz.lib dsound.lib msxml2.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\Daniel_Lau\Documents\Visual Studio 2013\Projects\CSE 471\Synthie - Copy\Debug\Synthie.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Daniel_Lau\Documents\Visual Studio 2013\Projects\CSE 471\Synthie - Copy\Debug\Synthie.lib" /MACHINE:X86 /SAFESEH Debug\Synthie.res
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Daniel_Lau\Documents\Visual Studio 2013\Projects\CSE 471\Step5\Debug\Synthie.exe" /INCREMENTAL /NOLOGO amstrmid.lib quartz.lib dsound.lib msxml2.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\Daniel_Lau\Documents\Visual Studio 2013\Projects\CSE 471\Step5\Debug\Synthie.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Daniel_Lau\Documents\Visual Studio 2013\Projects\CSE 471\Step5\Debug\Synthie.lib" /MACHINE:X86 /SAFESEH Debug\Synthie.res
+         Debug\AR.obj
          Debug\AudioNode.obj
          Debug\DirSound.obj
          Debug\DirSoundSource.obj
@@ -24,9 +35,9 @@
          Debug\WaveformBuffer.obj
          Debug\WaveformWnd.obj
          Debug\ToneInstrument.obj
-         Synthie.vcxproj -> C:\Users\Daniel_Lau\Documents\Visual Studio 2013\Projects\CSE 471\Synthie - Copy\Debug\Synthie.exe
-     1>Done Building Project "C:\Users\Daniel_Lau\Documents\Visual Studio 2013\Projects\CSE 471\Synthie - Copy\Synthie\Synthie.vcxproj" (Build target(s)).
+         Synthie.vcxproj -> C:\Users\Daniel_Lau\Documents\Visual Studio 2013\Projects\CSE 471\Step5\Debug\Synthie.exe
+     1>Done Building Project "C:\Users\Daniel_Lau\Documents\Visual Studio 2013\Projects\CSE 471\Step5\Synthie\Synthie.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.45
+Time Elapsed 00:00:05.20

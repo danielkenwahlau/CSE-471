@@ -9,6 +9,7 @@
 #pragma once
 #include "Instrument.h"
 #include "SineWave.h"
+#include "AR.h"
 /**
 * 		  Tonal instrument Class
 */
@@ -33,5 +34,7 @@ private:
 	CSineWave m_sinewave;
 	double m_duration;
 	double m_time;
+
+	CAR m_ar;
 };
 
