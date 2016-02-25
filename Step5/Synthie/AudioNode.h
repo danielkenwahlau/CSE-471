@@ -29,6 +29,9 @@ public:
 	//! Get the sample period in seconds
 	double GetSamplePeriod() { return m_samplePeriod; }
 
+	//get bpm
+	double GetBpm() { return m_bpm; };
+
 	//! Set the sample rate
 	void SetSampleRate(double s) { m_sampleRate = s;  m_samplePeriod = 1 / s; }
 

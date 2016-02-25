@@ -28,6 +28,8 @@ public:
 	void SetAmplitude(double a) { m_sinewave.SetAmplitude(a); }
 	void SetDuration(double d) { m_duration = d; }
 
+	double GetTime() { return m_time; };
+
 	virtual void SetNote(CNote *note);
 
 private:

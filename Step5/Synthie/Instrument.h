@@ -27,9 +27,10 @@ public:
 
 	void SetSynthesizer(CSynthesizer * synthesizer);
 
+	
+
 private:
 	
-	//CPicture * mPicture = nullptr;
 	/// The synthesizer that the instrument knows about
 	CSynthesizer * m_synthesizer = nullptr;
 };

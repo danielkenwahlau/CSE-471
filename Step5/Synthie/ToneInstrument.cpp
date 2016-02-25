@@ -36,14 +36,31 @@ void CToneInstrument::Start()
 	// the sine wave object.
 	m_ar.SetSource(&m_sinewave);
 	m_ar.SetSampleRate(GetSampleRate());
+	m_ar.SetBpm(m_bpm);
 	m_ar.Start();
 }
 
+//
+///**
+// * 		  generate
+// * \returns 
+// */
+//bool CToneInstrument::Generate()
+//{
+//    m_sinewave.Generate();
+//    bool valid = m_ar.Generate();
+//
+//    m_frame[0] = m_ar.Frame(0);
+//    m_frame[1] = m_ar.Frame(1);
+//
+//    m_time += GetSamplePeriod();
+//    return valid;
+//}
 
 /**
- * 		  generate
- * \returns 
- */
+* 		  generate
+* \returns
+*/
 bool CToneInstrument::Generate()
 {
 	// Tell the component to generate an audio sample
@@ -61,7 +78,7 @@ bool CToneInstrument::Generate()
 
 	double timeHeld = 1 / (m_bpm / 60)*m_duration;
 
-	//return m_time < beatsHeld;
+	
 	return m_time < timeHeld;
 }
 
